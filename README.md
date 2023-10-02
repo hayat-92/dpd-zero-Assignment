@@ -1,4 +1,4 @@
-# Backend System for API Implementation (Node.js with Sequelize and MySQL)
+# Backend System for API Implementation (Node.js with Sequelize and MySQL)(DPDZero-Assignment)
 
 This repository contains the code for a backend system that implements the APIs described in the API Documentation section. The system is built using **Node.js** as the framework, **MySQL** as the database, and **Sequelize** as the ORM for data handling.
 
