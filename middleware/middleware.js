@@ -17,8 +17,8 @@ function authenticateToken(req, res, next) {
     if (err) {
       return res.status(401).json({
         status: "error",
-        code: "AUTHENTICATION_ERROR",
-        message: "Access denied. Invalid token.",
+        code: "INVALID_TOKEN",
+        message: "Invalid access token provided",
       });
     }
 

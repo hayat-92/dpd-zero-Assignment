@@ -24,7 +24,7 @@ let checkPassword = (password) => {
 };
 
 let ageCheck = (age) => {
-  if (age && isNaN(age)) {
+  if (!age || isNaN(age)) {
     return {
       status: "error",
       code: "INVALID_AGE",

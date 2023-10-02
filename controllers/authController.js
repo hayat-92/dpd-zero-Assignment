@@ -114,6 +114,13 @@ let register = async (req, res) => {
 let login = async (req, res) => {
   try {
     const { username, password } = req.body;
+    if (!username || !password) {
+      return res.status(400).json({
+        status: "error",
+        code: "MISSING_FIELDS",
+        message: "Missing fields. Please provide both username and password.",
+      });
+    }
 
     // Find the user by username
     const user = await User.findOne({ where: { username } });
